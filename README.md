@@ -12,7 +12,7 @@ GitHub User Finder is a React.js application designed to help users search for G
 
 **Usage:**
 To run the application, visit the following URL:
-[GitHub User Finder Application](https://github-user-finder.netlify.app/)
+[GitHub User Finder Application](https://github-user-founder.netlify.app/)
 
 **License:**
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
