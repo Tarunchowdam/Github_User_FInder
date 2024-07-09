@@ -1,0 +1,84 @@
+.userInfoContainer {
+  padding-top: 1.25rem;
+}
+
+.backButton {
+  padding: 0.25rem 1.25rem;
+  font-weight: 500;
+  margin: 0.25rem 0.25rem 1rem 0.25rem;
+  background-color: #0867ffc1;
+  border-radius: 0.375rem;
+  color: #e2e8f0;
+}
+
+.userDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 0 1rem;
+}
+
+.userDetails img {
+  width: 400px;
+  border: 0.2rem solid #0b9ddc;
+  margin: 0 auto;
+}
+
+.userInfo {
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  padding: 0 0.75rem;
+}
+
+.userName {
+  font-size: 1.875rem;
+  padding-bottom: 1rem;
+}
+
+.infoLabel {
+  color: #cc0940;
+}
+
+.visitButton {
+  color: #e2e8f0;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  background-color: #0550f4ce;
+  margin: 0.75rem 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.tabsContainer {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1rem;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.reposContainer,
+.eventsContainer {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.75rem;
+  width: 83.333333%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .userDetails {
+      flex-direction: row;
+      padding: 0;
+  }
+  
+  .reposContainer,
+  .eventsContainer {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

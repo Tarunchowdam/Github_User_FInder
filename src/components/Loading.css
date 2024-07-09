@@ -1,0 +1,25 @@
+.loadingContainer {
+    height: 24rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    border-width: 0.5rem; 
+    padding: 1.25rem; 
+    border-radius: 9999px; 
+    border-bottom-color: transparent; 
+    border-color: #38b2ac; 
+    animation: spin 1s linear infinite; 
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

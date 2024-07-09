@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Logo from "./components/Logo";
+import UserInfo from "./Routes/UserInfo";
+import Users from "./Routes/Users";
+import "./App.css"; // Import the CSS file
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="appContainer">
+      <div className="container text-gray-200 py-3">
+        <Logo />
+        <Routes>
+          <Route path="/" element={<Users />} />
+          <Route path="/:name" element={<UserInfo />} />
+        </Routes>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,30 @@
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    height: 2.75rem; 
+    margin: 1.25rem 0; 
+    align-items: center;
+  }
+  
+  .searchInput {
+    height: 100%; 
+    width: 66.666667%;
+    outline: none;
+    color: #000000; 
+    padding-left: 0.5rem;
+    font-weight: 600; 
+    font-size: 1.125rem; 
+  
+    @media (min-width: 1000px) {
+      width: 100%; 
+    }
+  }
+  
+  .searchButton {
+    background-color: #057df5; 
+    font-weight: 600; 
+    padding: 0 1rem; 
+    height: 100%;
+    font-family: "Poppins", sans-serif; 
+  }
+  
